@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400&family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.project-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.project-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+}
