@@ -41,6 +41,9 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
                 onSetActive={() => setActiveSection(section.id)}
+                style={{
+                  cursor: "pointer"
+                }}
               >
                 <Typography
                   sx={{

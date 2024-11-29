@@ -1,14 +1,17 @@
 import { Box, Typography, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
+import { useState, useEffect } from "react";
 
 const Home = () => {
+  const [text, setText] = useState("");
+
   return (
     <Box
       id="home"
       sx={{
         minHeight: "100vh",
-        backgroundColor: "#040319",
+        background: "linear-gradient(135deg, #040319, #1a1a3d, #0a0a2a)",
         color: "#ffffff",
         display: "flex",
         alignItems: "center",
@@ -21,7 +24,7 @@ const Home = () => {
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        viewport={{ once: false }} 
+        viewport={{ once: false }}
       >
         <Typography
           variant="h2"
@@ -39,13 +42,14 @@ const Home = () => {
           variant="h5"
           sx={{
             fontSize: { xs: "1.5rem", md: "2rem" },
-            mb: 4,
+            mb: 2,
             color: "#00FFFF",
             textShadow: "1px 1px 4px rgba(0, 0, 0, 0.5)",
           }}
         >
           A Passionate Full Stack Developer
         </Typography>
+
 
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Button
